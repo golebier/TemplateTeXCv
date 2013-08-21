@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Working on: $1: "
+
+if [ ! -f $1.tex ];
+then
+    echo "File not found!"
+else
+    pdflatex $1.tex
+    echo "Cleaningup: $1: "
+    rm $1.log $1.aux $1.out
+    thunar $1.pdf
+fi
+
+
