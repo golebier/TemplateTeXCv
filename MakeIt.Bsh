@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+# can be deprecated, now I use TeX with Eclipse, then this script can need refactorization.
+
+
 echo "Working on: $1: "
 
 if [ ! -f $1.tex ];
@@ -11,5 +15,3 @@ else
     rm $1.log $1.aux $1.out
     thunar $1.pdf
 fi
-
-

@@ -1,19 +1,12 @@
-%
-\def \icon [#1]{\includegraphics[width=3mm,height=3mm]{Icons/#1}}
-%
-\def \linkedin {\icon[linkedin.png]{}}
-%
-\def \github {\icon[github.png]{}}
-%
-\def \gplus {\icon[gplus.jpg]{}}
-%
-\def \researchgate {\icon[researchgate.png]{}}
-%
-\def \twitter {\icon[twitter.png]{}}
-%
-\def \aboutme {\icon[aboutme.png]{}}
-%
-\def \skype {\icon[skype.png]{}}
-%
-\def \svn {\icon[svn.png]{}}
+\graphicspath{ {./Icons/} }
 
+\newcommand{\icon}[1]{\includegraphics[width=3mm,height=3mm]{#1}}
+
+\newcommand{\linkedin}[1]{\href{#1}{\icon{linkedin.png}}}
+\newcommand{\github}[1]{\href{#1}{\icon{github.png}}}
+\newcommand{\gplus}[1]{\href{#1}{\icon{gplus.jpg}}}
+\newcommand{\researchgate}[1]{\href{#1}{\icon{researchgate.png}}}
+\newcommand{\twitter}[1]{\href{#1}{\icon{twitter.png}}}
+\newcommand{\aboutme}[1]{\href{#1}{\icon{aboutme.png}}}
+\newcommand{\skype}[1]{\href{#1}{\icon{skype.png}}}
+\newcommand{\svn}[1]{\href{#1}{\icon{svn.png}}}
